@@ -30,7 +30,7 @@
                          echo '</div>';
 
                        }
-                       submit_button(__('Save Changes'));
+                       submit_button(__('Save Changes', 'admin-customizer'));
 
                         ?>
                       </form>

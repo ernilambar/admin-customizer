@@ -30,7 +30,7 @@ if ( ! class_exists('npf_field_custom_taxonomy_select')):
 				$pargs = array_merge($pargs,$args['field']['extra_args']);
 			}
 			if ( isset($args['field']['allow_null'])&& true == $args['field']['allow_null'] ) {
-				$pargs['show_option_none'] = __('Select');
+				$pargs['show_option_none'] = __('Select', 'admin-customizer');
 			}
 
 			wp_dropdown_categories( $pargs );

@@ -1,0 +1,6 @@
+{
+  "plugin_slug": "admin-customizer",
+  "deployment_folder": "deploy/admin-customizer",
+  "deploy_assets": true,
+  "assets_folder": "plugin-assets"
+}
