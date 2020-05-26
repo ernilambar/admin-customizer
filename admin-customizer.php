@@ -98,13 +98,14 @@ class AdminCustomizer {
 			}
 		}
 
+		if ( 1 === absint( $this->options['adns_hide_welcome_panel'] ) ) {
+			remove_action('welcome_panel', 'wp_welcome_panel');
+		}
+
 		// Admin sidebar content.
 		add_action( 'npf_sidebar_admin-customizer', array( $this, 'admin_sidebar' ) );
-
-		// remove_action('welcome_panel', 'wp_welcome_panel');
-
-
 	}
+
 	/**
 	 * Plugin init.
 	 *
