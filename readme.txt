@@ -65,7 +65,10 @@ Nice, make a post on the [Support Forum](http://wordpress.org/support/plugin/adm
 == Changelog ==
 
 = 2.1.0 =
-* Minor bug fixes
+* Add: Option to hide Welcome panel
+* Add: Option to hide Site Health
+* Fix: Deprecated notice
+* Fix: Minor issues
 
 = 2.0.0 =
 * Major refactoring of code
