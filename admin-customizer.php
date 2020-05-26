@@ -425,6 +425,10 @@ class AdminCustomizer {
 						// Quick Draft.
 						$this->remove_dashboard_widget( 'dashboard_quick_press', 'side' );
 						break;
+					case 'dashboard_site_health':
+						// Site Health.
+						$this->remove_dashboard_widget( 'dashboard_site_health', 'normal' );
+						break;
 					default:
 						break;
 				}
@@ -449,6 +453,7 @@ class AdminCustomizer {
 	 */
 	private function remove_dashboard_widget( $widget, $side ) {
 		global $wp_meta_boxes;
+		// nspre( $wp_meta_boxes );
 
 		if ( ! in_array( $side, array( 'side', 'normal' ) ) ) {
 			return;

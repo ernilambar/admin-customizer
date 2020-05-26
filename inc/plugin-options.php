@@ -216,10 +216,11 @@ $admin_customizer_settings = array(
                     'type'        => 'checkbox',
                     'default'     => $admin_customizer_default_options['adns_hide_dashboard_widgets'],
                     'choices'     => array(
-                        'dashboard_right_now'   => __( 'At a Glance', 'admin-customizer' ),
-                        'dashboard_quick_press' => __( 'Quick Draft', 'admin-customizer' ),
-                        'dashboard_activity'    => __( 'Activity', 'admin-customizer' ),
-                        'dashboard_primary'     => __( 'WordPress News', 'admin-customizer' ),
+						'dashboard_right_now'   => __( 'At a Glance', 'admin-customizer' ),
+						'dashboard_quick_press' => __( 'Quick Draft', 'admin-customizer' ),
+						'dashboard_activity'    => __( 'Activity', 'admin-customizer' ),
+						'dashboard_primary'     => __( 'WordPress News', 'admin-customizer' ),
+						'dashboard_site_health' => __( 'Site Health', 'admin-customizer' ),
                     ),
                 ),
                 'adns_add_custom_dashboard_widget_onoff' => array(
