@@ -545,55 +545,47 @@ class AdminCustomizer {
 		?>
         <div class="meta-box-sortables">
 
+        	<div class="postbox">
+
+        		<h3><span>Help &amp; Support</span></h3>
+        		<div class="inside">
+        			<ul>
+        				<li><strong>Questions, bugs, or great ideas?</strong></li>
+        				<li><a href="https://wordpress.org/support/plugin/admin-customizer/" target="_blank">Visit our plugin support page</a></li>
+        				<li><strong>Wanna help make this plugin better?</strong></li>
+        				<li><a href="https://wordpress.org/support/plugin/admin-customizer/reviews/#new-post" target="_blank">Review and rate this plugin on WordPress.org</a></li>
+        			</ul>
+        		</div> <!-- .inside -->
+
+        	</div> <!-- .postbox -->
+
             <div class="postbox">
 
-                <h3><span>Help &amp; Support</span></h3>
-                <div class="inside">
-                    <h4>Questions, bugs, or great ideas?</h4>
-                    <p><a href="https://github.com/ernilambar/admin-customizer" target="_blank">Github page</a></p>
-                    <h4>Wanna help make this plugin better?</h4>
-                    <p>
-                        <a href="http://wordpress.org/support/view/plugin-reviews/admin-customizer" target="_blank">Review and rate this plugin on WordPress.org</a>
-                    </p>
-                </div> <!-- .inside -->
+            	<h3><span>My Blog</span></h3>
+            	<div class="inside">
+            		<?php
+            		$rss = fetch_feed( 'https://www.nilambar.net/category/wordpress/feed' );
 
-            </div> <!-- .postbox -->
+            		$maxitems = 0;
 
-            <div class="postbox">
+            		$rss_items = array();
 
-                <h3><span>My Themes and Plugins</span></h3>
-                <div class="inside">
-                    <h4>WordPress Theme</h4>
-                    <p>
-                        <a href="http://www.nilambar.net/2014/03/blue-planet-wordpress-theme-free.html" target="_blank">Blue Planet</a>
-                    </p>
-                    <p>
-                        <a href="http://www.nilambar.net/2015/03/simple-life-free-wordpress-theme.html" target="_blank">Simple Life</a>
-                    </p>
+            		if ( ! is_wp_error( $rss ) ) {
+            			$maxitems  = $rss->get_item_quantity( 5 );
+            			$rss_items = $rss->get_items( 0, $maxitems );
+            		}
+            		?>
 
-                    <h4>WordPress Plugins</h4>
-                    <p>
-                        <a href="http://www.nilambar.net/2014/07/ns-featured-posts-wordpress-plugin.html" target="_blank">NS Featured Posts</a>
-                    </p>
-                    <p>
-                        <a href="http://www.nilambar.net/2014/06/really-simple-image-widget-wordpress.html" target="_blank">Really Simple Image Widget</a>
-                    </p>
-                    <p>
-                        <a href="http://wordpress.org/plugins/ns-category-widget/" target="_blank">NS Category Widget</a>
-                    </p>
-                    <p>
-                        <a href="http://wordpress.org/plugins/quick-admin/" target="_blank">Quick Admin</a>
-                    </p>
-                    <p>
-                        <a href="http://wordpress.org/plugins/source-affix/" target="_blank">Source Affix</a>
-                    </p>
-                    <p>
-                        <a href="http://wordpress.org/plugins/ns-comment-validator/" target="_blank">NS Comment Validator</a>
-                    </p>
-                    <p>
-                        <a href="http://wordpress.org/plugins/date-today-nepali/" target="_blank">Date Today Nepali</a>
-                    </p>
-                </div> <!-- .inside -->
+            		<?php if ( ! empty( $rss_items ) ) : ?>
+
+            			<ul>
+            				<?php foreach ( $rss_items as $item ) : ?>
+            					<li><a href="<?php echo esc_url( $item->get_permalink() ); ?>" target="_blank"><?php echo esc_html( $item->get_title() ); ?></a></li>
+            				<?php endforeach; ?>
+            			</ul>
+
+            		<?php endif; ?>
+            	</div> <!-- .inside -->
 
             </div> <!-- .postbox -->
 
