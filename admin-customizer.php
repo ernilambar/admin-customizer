@@ -101,6 +101,9 @@ class AdminCustomizer {
 		// Admin sidebar content.
 		add_action( 'npf_sidebar_admin-customizer', array( $this, 'admin_sidebar' ) );
 
+		// remove_action('welcome_panel', 'wp_welcome_panel');
+
+
 	}
 	/**
 	 * Plugin init.

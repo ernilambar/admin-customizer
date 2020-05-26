@@ -45,6 +45,7 @@ function adns_get_default_options() {
         'adns_hide_footer_text' => 0,
         'adns_footer_text' => __( 'All Rights Reserved &copy;', 'admin-customizer' ),
         'adns_footer_logo' => '',
+        'adns_hide_welcome_panel' => 1,
         'adns_no_of_columns_available_in_dashboard' => 2,
         'adns_hide_dashboard_widgets' => array( 'dashboard_primary' ),
         'remove_dashboard_widget_normal_core_dashboard_plugins' => 1,
@@ -199,6 +200,12 @@ $admin_customizer_settings = array(
             'id'          => 'dashboard',
             'title'       => __( 'Dashboard', 'admin-customizer' ),
             'fields'      => array(
+                'adns_hide_welcome_panel' => array(
+					'id'      => 'adns_hide_welcome_panel',
+					'title'   => __( 'Hide Welcome Panel', 'admin-customizer' ),
+					'type'    => 'checkbox_simple',
+					'default' => $admin_customizer_default_options['adns_hide_welcome_panel'],
+                ),
                 'adns_no_of_columns_available_in_dashboard' => array(
                     'id'          => 'adns_no_of_columns_available_in_dashboard',
                     'title'       => __( 'Dashboard Columns', 'admin-customizer' ),
