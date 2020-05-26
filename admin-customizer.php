@@ -1,20 +1,11 @@
 <?php
 /**
- * Admin Customizer WordPress Plugin
- *
- * @package   Admin_Customizer
- * @author    Nilambar Sharma<nilambar@outlook.com>
- * @license   GPL-2.0+
- * @link      http://nilambar.net
- * @copyright 2013 Nilambar Sharma
- *
- * @wordpress-plugin
  * Plugin Name:       Admin Customizer
- * Plugin URI:        http://www.nilambar.net/2013/11/admin-customizer-wordpress-plugin.html
- * Description:       This plugin allows you to customize the admin interface of your WordPress site.  Several options are available in a single plugin.
+ * Plugin URI:        https://www.nilambar.net/2013/11/admin-customizer-wordpress-plugin.html
+ * Description:       This plugin allows you to customize the admin interface of your WordPress site.
  * Version:           2.1.0
  * Author:            Nilambar Sharma
- * Author URI:        http://www.nilambar.net/
+ * Author URI:        https://www.nilambar.net/
  * Text Domain:       admin-customizer
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
