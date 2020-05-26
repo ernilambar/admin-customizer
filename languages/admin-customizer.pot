@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Admin Customizer 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/admin-customizer\n"
-"POT-Creation-Date: 2020-05-26 05:27:41+00:00\n"
+"POT-Creation-Date: 2020-05-26 06:29:04+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,15 +13,15 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: node-wp-i18n 1.2.3\n"
 
-#: admin-customizer.php:131
+#: admin-customizer.php:129
 msgid "Settings"
 msgstr ""
 
-#: admin-customizer.php:147
+#: admin-customizer.php:145
 msgid "Admin"
 msgstr ""
 
-#: admin-customizer.php:180
+#: admin-customizer.php:178
 msgid "Are you sure?"
 msgstr ""
 
@@ -173,97 +173,101 @@ msgstr ""
 msgid "WordPress News"
 msgstr ""
 
-#: inc/plugin-options.php:227
+#: inc/plugin-options.php:223
+msgid "Site Health"
+msgstr ""
+
+#: inc/plugin-options.php:228
 msgid "Custom Dashboard Widget"
 msgstr ""
 
-#: inc/plugin-options.php:233
+#: inc/plugin-options.php:234
 msgid "Custom Dashboard Widget Title"
 msgstr ""
 
-#: inc/plugin-options.php:239
+#: inc/plugin-options.php:240
 msgid "Custom Dashboard Widget Content"
 msgstr ""
 
-#: inc/plugin-options.php:247
+#: inc/plugin-options.php:248
 msgid "Footer"
 msgstr ""
 
-#: inc/plugin-options.php:251
+#: inc/plugin-options.php:252
 msgid "Hide Whole Footer"
 msgstr ""
 
-#: inc/plugin-options.php:257
+#: inc/plugin-options.php:258
 msgid "Hide Footer Text"
 msgstr ""
 
-#: inc/plugin-options.php:263
+#: inc/plugin-options.php:264
 msgid "Footer Logo"
 msgstr ""
 
-#: inc/plugin-options.php:264 inc/plugin-options.php:295
+#: inc/plugin-options.php:265 inc/plugin-options.php:296
 msgid "Recommended Size: %dpx x %dpx"
 msgstr ""
 
-#: inc/plugin-options.php:270
+#: inc/plugin-options.php:271
 msgid "Footer Text"
 msgstr ""
 
-#: inc/plugin-options.php:276
+#: inc/plugin-options.php:277
 msgid "Hide Footer Version"
 msgstr ""
 
-#: inc/plugin-options.php:282
+#: inc/plugin-options.php:283
 msgid "Footer Version"
 msgstr ""
 
-#: inc/plugin-options.php:290
+#: inc/plugin-options.php:291
 msgid "Login"
 msgstr ""
 
-#: inc/plugin-options.php:294
+#: inc/plugin-options.php:295
 msgid "Login Logo"
 msgstr ""
 
-#: inc/plugin-options.php:301
+#: inc/plugin-options.php:302
 msgid "Background Image"
 msgstr ""
 
-#: inc/plugin-options.php:307
+#: inc/plugin-options.php:308
 msgid "Login Background color"
 msgstr ""
 
-#: inc/plugin-options.php:315
+#: inc/plugin-options.php:316
 msgid "Other"
 msgstr ""
 
-#: inc/plugin-options.php:319
+#: inc/plugin-options.php:320
 msgid "Number of Revisions"
 msgstr ""
 
-#: inc/plugin-options.php:320
+#: inc/plugin-options.php:321
 msgid ""
 "Limit the number of revisions in posts and pages. [Note: This could be "
 "overridden by template.]"
 msgstr ""
 
-#: inc/plugin-options.php:324
+#: inc/plugin-options.php:325
 msgid "Save All"
 msgstr ""
 
-#: inc/plugin-options.php:339
+#: inc/plugin-options.php:340
 msgid "Default Email Address"
 msgstr ""
 
-#: inc/plugin-options.php:340
+#: inc/plugin-options.php:341
 msgid "Enter email address used by automatic email notifications."
 msgstr ""
 
-#: inc/plugin-options.php:346
+#: inc/plugin-options.php:347
 msgid "Default Name"
 msgstr ""
 
-#: inc/plugin-options.php:347
+#: inc/plugin-options.php:348
 msgid "Enter default name used by automatic email notifications."
 msgstr ""
 

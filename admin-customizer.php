@@ -81,6 +81,7 @@ class AdminCustomizer {
 		add_filter( 'admin_footer_text', array( $this, 'change_footer_text' ) );
 		// Number of columns in dashboard.
 		add_filter( 'screen_layout_columns', array( $this, 'change_number_of_screen_columns_available' ) );
+		add_filter( 'get_user_option_screen_layout_dashboard', array( $this, 'change_user_number_of_screen_columns_available' ) );
 		// Number of columns in dashboard.
 		add_action( 'wp_dashboard_setup', array( $this, 'dashboard_widgets_customization' ), 99 );
 		// Mail from name and email customization.
@@ -395,6 +396,23 @@ class AdminCustomizer {
 		if ( absint( $this->options['adns_no_of_columns_available_in_dashboard'] ) > 0 ) {
 			$columns['dashboard'] = absint( $this->options['adns_no_of_columns_available_in_dashboard'] );
 		}
+
+		return $columns;
+	}
+
+	/**
+	 * Screen columns user settings.
+	 *
+	 * @since 2.1.0
+	 *
+	 * @param int $columns Columns.
+	 * @return int Modified columns.
+	 */
+	public function change_user_number_of_screen_columns_available( $columns ) {
+		if ( absint( $this->options['adns_no_of_columns_available_in_dashboard'] ) > 0 ) {
+			$columns = absint( $this->options['adns_no_of_columns_available_in_dashboard'] );
+		}
+
 		return $columns;
 	}
 
