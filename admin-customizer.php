@@ -12,7 +12,7 @@
  * Plugin Name:       Admin Customizer
  * Plugin URI:        http://www.nilambar.net/2013/11/admin-customizer-wordpress-plugin.html
  * Description:       This plugin allows you to customize the admin interface of your WordPress site.  Several options are available in a single plugin.
- * Version:           2.0
+ * Version:           2.1.0
  * Author:            Nilambar Sharma
  * Author URI:        http://www.nilambar.net/
  * Text Domain:       admin-customizer
