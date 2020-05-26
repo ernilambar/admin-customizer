@@ -55,12 +55,13 @@ Nice, make a post on the [Support Forum](http://wordpress.org/support/plugin/adm
 
 == Screenshots ==
 
-1. Admin Customizer Settings - Header Section
-2. Admin Customizer Settings - Dashboard Section
-3. Admin Customizer Settings - Footer Section
-4. Admin Customizer Settings - Login Section
-5. Admin Customizer Settings - Other Section
-6. Admin Customizer Settings - Theme Section
+1. Settings - Header
+2. Settings - Theme
+3. Settings - Dashboard
+4. Settings - Footer
+5. Settings - Login
+6. Settings - Other
+7. Login Page with dark theme
 
 == Changelog ==
 
