@@ -82,7 +82,7 @@ class AdminCustomizer {
 		// Number of columns in dashboard.
 		add_filter( 'screen_layout_columns', array( $this, 'change_number_of_screen_columns_available' ) );
 		// Number of columns in dashboard.
-		add_action( 'wp_dashboard_setup', array( $this, 'dashboard_widgets_customization' ) );
+		add_action( 'wp_dashboard_setup', array( $this, 'dashboard_widgets_customization' ), 99 );
 		// Mail from name and email customization.
 		add_filter( 'wp_mail_from', array( $this, 'new_mail_from_email' ) );
 		add_filter( 'wp_mail_from_name', array( $this, 'new_mail_from_name' ) );
@@ -448,10 +448,15 @@ class AdminCustomizer {
 	 * @param string $side Widget side.
 	 */
 	private function remove_dashboard_widget( $widget, $side ) {
+		global $wp_meta_boxes;
+
 		if ( ! in_array( $side, array( 'side', 'normal' ) ) ) {
 			return;
 		}
-		remove_meta_box( $widget, 'dashboard', $side );
+
+		if ( isset( $wp_meta_boxes['dashboard'][$side]['core'][$widget] ) ) {
+			unset( $wp_meta_boxes['dashboard'][$side]['core'][$widget] );
+		}
 	}
 
 	/**
