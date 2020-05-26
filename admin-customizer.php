@@ -45,11 +45,9 @@ class AdminCustomizer {
 	 * @since 2.0.0
 	 */
 	function __construct() {
-
 		$this->options = adns_get_options();
 
 		$this->init_hooks();
-
 	}
 
 	/**
@@ -71,7 +69,6 @@ class AdminCustomizer {
 		add_action( 'admin_head', array( $this, 'custom_css' ) );
 		add_action( 'login_head', array( $this, 'custom_login_css' ) );
 		add_filter( 'login_headerurl', array( $this, 'change_login_logo_url_link' ) );
-		add_filter( 'login_headertitle', array( $this, 'change_login_logo_url_title' ) );
 		add_action( 'login_enqueue_scripts', array( $this, 'login_theme_loader' ) );
 		// Hide admin default logo.
 		add_action( 'wp_before_admin_bar_render', array( $this, 'hide_admin_logo' ) );
@@ -335,24 +332,6 @@ class AdminCustomizer {
 	}
 
 	/**
-	 * Change login logo URL title.
-	 *
-	 * @since 2.0.0
-	 *
-	 * @param string $title Login link title.
-	 * @return string Modified login link title.
-	 */
-	public function change_login_logo_url_title( $title ) {
-
-		if ( ! empty( $this->options['adns_login_logo_url'] ) ) {
-			$title = get_bloginfo( 'name', 'display' );
-		}
-		return $title;
-
-	}
-
-
-	/**
 	 * Change footer version content.
 	 *
 	 * @since 2.0.0
@@ -361,11 +340,12 @@ class AdminCustomizer {
 	 * @return string Modified footer content.
 	 */
 	public function change_footer_version( $output ) {
-
 		$output = '';
+
 		if ( 1 !== absint( $this->options['adns_hide_footer_version'] ) ) {
 			$output .= wp_kses_post( $this->options['adns_footer_version'] );
 		}
+
 		return $output;
 	}
 
@@ -378,8 +358,8 @@ class AdminCustomizer {
 	 * @return string Modified footer content.
 	 */
 	public function change_footer_text( $output ) {
-
 		$output = '';
+
 		if ( 1 === absint( $this->options['adns_hide_footer_text'] ) ) {
 			return $output;
 		}
