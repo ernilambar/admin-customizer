@@ -14,6 +14,7 @@ A plugin for customizing your admin panel.
 == Description ==
 
 This plugin allows you to customize admin interface of your WordPress site.  Several options are available in a single plugin.
+
 = Features =
 - Change logo in admin header
 - Custom CSS style for Admin and Login pages
@@ -46,7 +47,6 @@ Have any questions or bug report or suggestion, please [visit Github page](https
 1. Upload the 'admin-customizer' directory to your 'wp-content/plugins' directory
 1. Activate the plugin on the WordPress Plugins dashboard
 
-
 == Frequently Asked Questions ==
 
 = There is something cool you could add... =
@@ -61,7 +61,6 @@ Nice, make a post on the [Support Forum](http://wordpress.org/support/plugin/adm
 4. Admin Customizer Settings - Login Section
 5. Admin Customizer Settings - Other Section
 6. Admin Customizer Settings - Theme Section
-
 
 == Changelog ==
 
